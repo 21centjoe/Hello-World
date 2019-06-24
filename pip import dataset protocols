@@ -1,0 +1,20 @@
+from __future__ import absolute_import, division, print_function, unicode_literals
+
+
+# Import TensorFlow and TensorFlow Datasets
+import tensorflow as tf
+import tensorflow_datasets as tfds
+tfds.disable_progress_bar()
+
+# Helper libraries
+import math
+import numpy as np
+import matplotlib.pyplot as plt
+
+
+print(tf.__version__)
+
+# This will go away in the future.
+# If this gives an error, you might be running TensorFlow 2 or above
+# If so, then just comment out this line and run this cell again
+tf.enable_eager_execution()   
